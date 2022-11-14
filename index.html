@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="level-title" class="to-hide">Press The Button<br>Below To Start</h1>
+
+  <div class="container-for-all to-hide">
+    <table>
+      <tr>
+        <td colspan="2">
+          <button type="button" id="noneone" class="btn-event start long-bar" name="button">Start</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div type="button" id="green" class="btn-event left-btn green"></div>
+        </td>
+        <td>
+          <div type="button" id="red" class="btn-event right-btn red"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div type="button" id="yellow" class="btn-event left-btn yellow"></div>
+        </td>
+        <td>
+          <div type="button" id="blue" class="btn-event right-btn blue"></div>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <button type="button" id="nonethree" class="btn-event score long-bar" name="button">Scoreboard</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <button type="button" id="nonetwo" class="btn-event switch long-bar" name="button">Autoplay</button>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <p>*autoplay will automatically start next level after 3 seconds</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="score-board">
+    <ul>
+      <li>
+        <p>Srak</p>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>
